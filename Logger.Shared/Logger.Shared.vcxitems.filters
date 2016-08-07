@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\include\Logger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LogTargetManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ILogTarget.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LogTargetManagerRef.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ILogTargetRef.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Targets\DebugOutputTarget.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Targets\DebugOutputTargetRef.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Targets\FileOutput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Targets\FileOutputRef.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)LoggerRef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Logger.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LoggerRef.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LogTargetmanager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)LogTargetManagerRef.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Targets\FileOutput.cpp" />
+  </ItemGroup>
+</Project>
